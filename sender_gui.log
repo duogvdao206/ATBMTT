@@ -1,0 +1,70 @@
+2026-05-12 07:56:11,152 INFO Connected to receiver.
+2026-05-12 07:56:11,154 INFO Sent Hello!
+2026-05-12 07:56:11,156 INFO Received Ready!
+2026-05-12 07:56:11,165 INFO Sent metadata and session key.
+2026-05-12 07:56:11,342 INFO Sent part 1
+2026-05-12 07:56:11,484 INFO Sent part 2
+2026-05-12 07:56:11,635 INFO Sent part 3
+2026-05-12 07:56:11,793 INFO SUCCESS: File transfer completed!
+2026-05-12 08:09:01,594 INFO Lỗi kết nối/truyền tin: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-05-12 08:09:04,986 INFO Đã kết nối tới máy nhận.
+2026-05-12 08:09:04,987 INFO Gửi lời chào: Hello!
+2026-05-12 08:09:04,987 INFO Máy nhận phản hồi: Ready!
+2026-05-12 08:09:04,992 INFO Đã gửi Metadata và Khóa phiên (đã mã hóa RSA).
+2026-05-12 08:09:04,997 INFO Metadata đã được xác thực.
+2026-05-12 08:09:05,016 INFO Bắt đầu chia file làm 3 đoạn và mã hóa Triple DES...
+2026-05-12 08:09:05,200 INFO Đã gửi đoạn 1/3 (Kích thước: 4634147 bytes)
+2026-05-12 08:09:05,205 INFO --> Đã lưu bản mã hóa của đoạn 1 vào file: ma_hoa_doan_1.bin
+2026-05-12 08:09:05,384 INFO Đã gửi đoạn 2/3 (Kích thước: 4634147 bytes)
+2026-05-12 08:09:05,392 INFO --> Đã lưu bản mã hóa của đoạn 2 vào file: ma_hoa_doan_2.bin
+2026-05-12 08:09:05,577 INFO Đã gửi đoạn 3/3 (Kích thước: 4634147 bytes)
+2026-05-12 08:09:05,582 INFO --> Đã lưu bản mã hóa của đoạn 3 vào file: ma_hoa_doan_3.bin
+2026-05-12 08:09:05,758 INFO THÀNH CÔNG: File đã được truyền và xác thực hoàn tất!
+2026-05-12 08:12:51,804 INFO Đã kết nối Socket tới máy nhận.
+2026-05-12 08:12:51,805 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để thực hiện Handshake (Bắt tay) ---
+2026-05-12 08:12:54,347 INFO SENDER -> RECEIVER: 'Hello!'
+2026-05-12 08:12:54,347 INFO RECEIVER -> SENDER: 'Ready!'
+2026-05-12 08:12:54,350 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để Gửi Metadata và Trao đổi khóa RSA ---
+2026-05-12 08:12:59,772 INFO SENDER -> RECEIVER: Gửi Metadata + Khóa phiên (đã mã hóa RSA)
+2026-05-12 08:12:59,777 INFO RECEIVER -> SENDER: 'ACK' (Đã xác thực xong Metadata)
+2026-05-12 08:12:59,780 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để Chia 3 đoạn và mã hóa Triple DES để gửi ---
+2026-05-12 08:13:01,937 INFO SENDER -> RECEIVER: Đã gửi đoạn 1/3
+2026-05-12 08:13:02,122 INFO SENDER -> RECEIVER: Đã gửi đoạn 2/3
+2026-05-12 08:13:02,312 INFO SENDER -> RECEIVER: Đã gửi đoạn 3/3
+2026-05-12 08:13:02,500 INFO KẾT QUẢ: Truyền file THÀNH CÔNG!
+2026-05-12 08:14:11,899 INFO Lỗi: [WinError 10061] No connection could be made because the target machine actively refused it
+2026-05-12 08:14:12,790 INFO Đã kết nối Socket tới máy nhận.
+2026-05-12 08:14:12,790 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để thực hiện Handshake (Bắt tay) ---
+2026-05-12 08:14:15,272 INFO SENDER -> RECEIVER: 'Hello!'
+2026-05-12 08:14:17,205 INFO RECEIVER -> SENDER: 'Ready!'
+2026-05-12 08:14:17,212 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để Gửi Metadata và Trao đổi khóa RSA ---
+2026-05-12 08:14:20,230 INFO SENDER -> RECEIVER: Gửi Metadata + Khóa phiên (đã mã hóa RSA)
+2026-05-12 08:14:23,147 INFO RECEIVER -> SENDER: 'ACK' (Đã xác thực xong Metadata)
+2026-05-12 08:14:23,149 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để Chia 3 đoạn và mã hóa Triple DES để gửi ---
+2026-05-12 08:14:26,408 INFO SENDER -> RECEIVER: Đã gửi đoạn 1/3
+2026-05-12 08:14:29,613 INFO SENDER -> RECEIVER: Đã gửi đoạn 2/3
+2026-05-12 08:14:29,772 INFO SENDER -> RECEIVER: Đã gửi đoạn 3/3
+2026-05-12 08:14:30,014 INFO KẾT QUẢ: Truyền file THÀNH CÔNG!
+2026-05-12 08:18:14,562 INFO Đã kết nối Socket tới máy nhận.
+2026-05-12 08:18:14,565 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để thực hiện Handshake (Bắt tay) ---
+2026-05-12 08:18:16,186 INFO SENDER -> RECEIVER: 'Hello!'
+2026-05-12 08:18:18,618 INFO RECEIVER -> SENDER: 'Ready!'
+2026-05-12 08:18:18,618 INFO Đã tạo Khóa phiên Triple DES: 20E973809E25FBBA914CAEAB2F8991E601EF5EE60201E994
+2026-05-12 08:18:18,626 INFO SENDER -> RECEIVER: Gửi Metadata + Khóa phiên (đã mã hóa RSA)
+2026-05-12 08:18:34,404 INFO Bị từ chối: lỗi integrity (Timestamp expired)
+2026-05-12 08:18:39,132 INFO Đã kết nối Socket tới máy nhận.
+2026-05-12 08:18:39,134 INFO --- ĐANG DỪNG: Hãy nhấn 'BƯỚC TIẾP THEO' để thực hiện Handshake (Bắt tay) ---
+2026-05-12 08:18:40,227 INFO SENDER -> RECEIVER: 'Hello!'
+2026-05-12 08:18:40,665 INFO RECEIVER -> SENDER: 'Ready!'
+2026-05-12 08:18:40,665 INFO Đã tạo Khóa phiên Triple DES: 078C79383B86A1E932E516EFF1619BC434FB519B45C49E91
+2026-05-12 08:18:40,676 INFO SENDER -> RECEIVER: Gửi Metadata + Khóa phiên (đã mã hóa RSA)
+2026-05-12 08:18:41,899 INFO Bị từ chối: lỗi integrity (Timestamp expired)
+2026-05-12 08:22:50,711 INFO Đã kết nối thành công tới máy nhận.
+2026-05-12 08:22:53,216 INFO Handshake thành công (Hello -> Ready).
+2026-05-12 08:22:54,565 INFO Đã tạo Khóa phiên Triple DES: 074FD61F2645162A089E3B1A76BF3E0898858F890EF8F4DC
+2026-05-12 08:22:54,566 INFO Đã gửi Metadata & Khóa RSA (Thời gian mã hóa RSA: 0.0010s)
+2026-05-12 08:23:04,272 INFO Máy nhận đã xác thực Metadata thành công.
+2026-05-12 08:23:09,100 INFO Đoạn 1/3: Đã gửi (Time: 0.1537s)
+2026-05-12 08:23:11,192 INFO Đoạn 2/3: Đã gửi (Time: 0.1499s)
+2026-05-12 08:23:11,580 INFO Đoạn 3/3: Đã gửi (Time: 0.1574s)
+2026-05-12 08:23:11,775 INFO TẤT CẢ HOÀN TẤT! File đã được truyền an toàn.
