@@ -66,3 +66,12 @@
 2026-05-12 08:23:11,372 INFO Đoạn 2/3: Đã giải mã thành công (Time: 0.1442s)
 2026-05-12 08:23:11,755 INFO Đoạn 3/3: Đã giải mã thành công (Time: 0.1408s)
 2026-05-12 08:23:11,772 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-18 13:00:53,767 INFO Hệ thống máy nhận đã sẵn sàng.
+2026-05-18 13:01:03,465 INFO Phát hiện kết nối từ ('127.0.0.1', 61629)
+2026-05-18 13:01:11,550 INFO Handshake thành công.
+2026-05-18 13:01:14,820 INFO Nhận yêu cầu: CAM ON VI TAT CA - THAI HOANG.mp3 (ID: 0193E6C5E1D91321)
+2026-05-18 13:01:21,491 INFO Giải mã khóa RSA thành công (0.0087s). Khóa: 02018A047F522FEFE5D6E63D8FEA4AB5F86E2C979D891F4A
+2026-05-18 13:01:28,534 INFO Đoạn 1/3: Đã giải mã thành công (Time: 0.1423s)
+2026-05-18 13:01:28,913 INFO Đoạn 2/3: Đã giải mã thành công (Time: 0.1440s)
+2026-05-18 13:01:29,292 INFO Đoạn 3/3: Đã giải mã thành công (Time: 0.1401s)
+2026-05-18 13:01:29,303 INFO HOÀN TẤT: Đã nhận và ghép file thành công!

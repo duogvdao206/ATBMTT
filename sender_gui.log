@@ -68,3 +68,12 @@
 2026-05-12 08:23:11,192 INFO Đoạn 2/3: Đã gửi (Time: 0.1499s)
 2026-05-12 08:23:11,580 INFO Đoạn 3/3: Đã gửi (Time: 0.1574s)
 2026-05-12 08:23:11,775 INFO TẤT CẢ HOÀN TẤT! File đã được truyền an toàn.
+2026-05-18 13:01:03,464 INFO Đã kết nối thành công tới máy nhận.
+2026-05-18 13:01:11,550 INFO Handshake thành công (Hello -> Ready).
+2026-05-18 13:01:14,815 INFO Đã tạo Khóa phiên Triple DES: 02018A047F522FEFE5D6E63D8FEA4AB5F86E2C979D891F4A
+2026-05-18 13:01:14,820 INFO Đã gửi Metadata & Khóa RSA (Thời gian mã hóa RSA: 0.0010s)
+2026-05-18 13:01:21,494 INFO Máy nhận đã xác thực Metadata thành công.
+2026-05-18 13:01:26,581 INFO Đoạn 1/3: Đã gửi (Time: 0.1569s)
+2026-05-18 13:01:28,735 INFO Đoạn 2/3: Đã gửi (Time: 0.1531s)
+2026-05-18 13:01:29,118 INFO Đoạn 3/3: Đã gửi (Time: 0.1538s)
+2026-05-18 13:01:29,303 INFO TẤT CẢ HOÀN TẤT! File đã được truyền an toàn.
