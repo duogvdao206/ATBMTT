@@ -75,3 +75,71 @@
 2026-05-18 13:01:28,913 INFO Đoạn 2/3: Đã giải mã thành công (Time: 0.1440s)
 2026-05-18 13:01:29,292 INFO Đoạn 3/3: Đã giải mã thành công (Time: 0.1401s)
 2026-05-18 13:01:29,303 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-19 07:22:06,812 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:27:02,116 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:27:08,415 INFO Phát hiện kết nối từ ('127.0.0.1', 56378)
+2026-05-19 07:27:08,421 INFO Đang phản hồi bắt tay (Ready!).
+2026-05-19 07:27:08,425 INFO Nhận yêu cầu file: 3in1 - Slex.mp3
+2026-05-19 07:27:08,429 INFO Giải mã khóa Phiên RSA thành công.
+2026-05-19 07:27:08,807 INFO Đã giải mã thành công Đoạn 1/3.
+2026-05-19 07:27:09,160 INFO Đã giải mã thành công Đoạn 2/3.
+2026-05-19 07:27:09,539 INFO Đã giải mã thành công Đoạn 3/3.
+2026-05-19 07:27:09,555 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-19 07:27:16,725 INFO Phát hiện kết nối từ ('127.0.0.1', 56381)
+2026-05-19 07:27:16,728 INFO Đang phản hồi bắt tay (Ready!).
+2026-05-19 07:27:16,745 INFO Nhận yêu cầu file: 3in1 - Slex.mp3
+2026-05-19 07:27:16,749 INFO Giải mã khóa Phiên RSA thành công.
+2026-05-19 07:27:17,147 INFO Đã giải mã thành công Đoạn 1/3.
+2026-05-19 07:27:17,544 INFO Đã giải mã thành công Đoạn 2/3.
+2026-05-19 07:27:17,922 INFO Đã giải mã thành công Đoạn 3/3.
+2026-05-19 07:27:17,934 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-19 07:32:48,623 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:32:56,247 INFO Phát hiện kết nối từ ('127.0.0.1', 64297)
+2026-05-19 07:32:56,255 INFO Đang phản hồi bắt tay (Ready!).
+2026-05-19 07:32:56,263 INFO Nhận yêu cầu file: 3in1 - Slex.mp3
+2026-05-19 07:32:56,272 INFO Giải mã khóa Phiên RSA thành công.
+2026-05-19 07:32:56,675 INFO Đã giải mã thành công Đoạn 1/3.
+2026-05-19 07:32:57,077 INFO Đã giải mã thành công Đoạn 2/3.
+2026-05-19 07:32:57,463 INFO Đã giải mã thành công Đoạn 3/3.
+2026-05-19 07:32:57,479 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-19 07:35:16,159 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:35:34,616 INFO Phát hiện kết nối từ ('127.0.0.1', 51447)
+2026-05-19 07:35:34,622 INFO Đang phản hồi bắt tay (Ready!).
+2026-05-19 07:35:34,632 INFO Nhận yêu cầu file: 3in1 - Slex.mp3
+2026-05-19 07:35:34,632 INFO Giải mã khóa Phiên RSA thành công.
+2026-05-19 07:35:35,046 INFO Đã giải mã thành công Đoạn 1/3.
+2026-05-19 07:35:35,427 INFO Đã giải mã thành công Đoạn 2/3.
+2026-05-19 07:35:35,806 INFO Đã giải mã thành công Đoạn 3/3.
+2026-05-19 07:35:35,815 INFO HOÀN TẤT: Đã nhận và ghép file thành công!
+2026-05-19 07:40:13,013 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:40:13,022 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-19 07:40:24,272 INFO Phát hiện kết nối từ ('127.0.0.1', 53385)
+2026-05-19 07:40:24,272 INFO Đang phản hồi bắt tay (Ready!). Chờ Metadata...
+2026-05-19 07:40:30,326 INFO Phát hiện kết nối từ ('127.0.0.1', 53397)
+2026-05-19 07:40:30,326 INFO Đang phản hồi bắt tay (Ready!). Chờ Metadata...
+2026-05-19 07:40:38,131 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:40:38,131 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-19 07:40:45,582 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:40:45,583 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-19 07:40:47,706 INFO Phát hiện kết nối từ ('127.0.0.1', 53409)
+2026-05-19 07:40:47,706 INFO Đang phản hồi bắt tay (Ready!). Chờ Metadata...
+2026-05-19 07:41:00,714 INFO Nhận yêu cầu gửi file: Buồn Của Anh - Thái Hoàng.mp3
+2026-05-19 07:41:00,722 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-19 07:41:00,722 INFO Chờ nhận các đoạn file...
+2026-05-19 07:41:15,015 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-19 07:41:19,546 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-19 07:41:23,928 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-19 07:41:23,944 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-19 07:44:46,365 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-19 07:44:46,372 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-19 07:44:55,055 INFO Phát hiện kết nối từ ('127.0.0.1', 61032)
+2026-05-19 07:44:55,061 INFO Nhận được lời chào: Hello!
+2026-05-19 07:44:55,062 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-19 07:45:03,840 INFO Đang gửi phản hồi: Ready!
+2026-05-19 07:45:09,082 INFO Nhận yêu cầu gửi file: 3in1 - Slex.mp3
+2026-05-19 07:45:09,086 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-19 07:45:09,090 INFO Chờ nhận các đoạn file...
+2026-05-19 07:45:16,859 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-19 07:45:18,594 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-19 07:45:19,762 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-19 07:45:19,776 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!

@@ -1,0 +1,134 @@
+2026-05-19 07:22:04,409 INFO Đã mở cổng 65433 để đón bắt các gói tin.
+2026-05-19 07:22:22,748 WARNING ĐÃ BẮT ĐƯỢC KẾT NỐI TỪ ('127.0.0.1', 51242)!
+2026-05-19 07:22:33,790 INFO Nhận được yêu cầu bắt tay (Handshake). Trả lời 'Ready!' để dụ nạn nhân gửi dữ liệu...
+2026-05-19 07:22:37,994 INFO Nhận được Metadata. File: TIftJustinTimberlakeDead&GoneTháiHoàngRemix.mp3
+2026-05-19 07:22:37,996 WARNING Phát hiện Khóa Phiên (Session Key) nhưng đã bị mã hóa RSA!
+2026-05-19 07:22:37,996 WARNING Khóa bị mã hóa (Base64): hcTsbndhLNIKtmMppdyN37aSMzierQYLZ1TeSUnFToymN0x5Ny...
+2026-05-19 07:22:38,005 ERROR ❌ THẤT BẠI: Kẻ nghe lén KHÔNG CÓ Private Key của máy nhận nên KHÔNG THỂ giải mã Khóa Phiên.
+2026-05-19 07:22:38,005 INFO Tiếp tục dụ nạn nhân gửi các đoạn dữ liệu...
+2026-05-19 07:22:42,106 INFO Bắt được đoạn dữ liệu 1/3.
+2026-05-19 07:22:42,109 WARNING Ciphertext (Base64): w/kqvIeOcAvY7oTEY4Y9cwHO5EGBR8BhbxVMSt0K1LG+oHfhdR...
+2026-05-19 07:22:42,109 ERROR ❌ THẤT BẠI: Vì không có Khóa Phiên, dữ liệu thu được chỉ là chuỗi vô nghĩa!
+2026-05-19 07:22:42,322 INFO Bắt được đoạn dữ liệu 2/3.
+2026-05-19 07:22:42,323 WARNING Ciphertext (Base64): q8OgNd4EPkSkgpi0vWEQoRCUs28pTkIj6lEi4S4E1hCkjmQSEx...
+2026-05-19 07:22:42,325 ERROR ❌ THẤT BẠI: Vì không có Khóa Phiên, dữ liệu thu được chỉ là chuỗi vô nghĩa!
+2026-05-19 07:22:42,535 INFO Bắt được đoạn dữ liệu 3/3.
+2026-05-19 07:22:42,535 WARNING Ciphertext (Base64): yjLL9HDI2VyEVZQHS5t7yEA5Tpn3wTmdueg/OoYiW6n3VJAMea...
+2026-05-19 07:22:42,541 ERROR ❌ THẤT BẠI: Vì không có Khóa Phiên, dữ liệu thu được chỉ là chuỗi vô nghĩa!
+2026-05-19 07:22:42,541 INFO HOÀN TẤT BẮT GÓI TIN.
+2026-05-19 07:22:42,544 WARNING KẾT LUẬN: Đã bắt được toàn bộ gói tin nhưng không thể đọc được nội dung do mã hóa mạnh!
+2026-05-19 07:26:53,453 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:27:16,724 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 56380)!
+2026-05-19 07:27:16,725 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:27:16,728 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:27:16,728 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:27:16,734 WARNING [Bắt gói tin Sender -> Receiver] Loại: metadata
+2026-05-19 07:27:16,734 ERROR Bắt được khóa phiên mã hóa: IZh2TVSzvq3xlX7MgW2Bfr2GpVOu9cDHOjv02bsM...
+2026-05-19 07:27:16,745 ERROR ❌ Không có Private Key của Receiver -> Không thể giải mã Session Key!
+2026-05-19 07:27:16,749 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-05-19 07:27:16,955 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:27:16,958 ERROR Bắt được đoạn 1 mã hóa: 2Enp/+MWQ+B4sDmrXDH+c3ciqvo+fPLiCxDw4bUe...
+2026-05-19 07:27:16,958 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:27:17,147 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:27:17,344 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:27:17,346 ERROR Bắt được đoạn 2 mã hóa: HfGrOZIWtRUoGxb6/+ykzjLa2bM3iuqEimmyBp7m...
+2026-05-19 07:27:17,351 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:27:17,544 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:27:17,733 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:27:17,743 ERROR Bắt được đoạn 3 mã hóa: 2nQLGCf/efD1pNIx8t8auujW0uHVqjfbIAJzNS+z...
+2026-05-19 07:27:17,744 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:27:17,925 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:27:17,939 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
+2026-05-19 07:32:51,255 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:32:56,247 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 64296)!
+2026-05-19 07:32:56,247 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:32:56,255 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:32:56,255 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:32:56,263 WARNING [Bắt gói tin Sender -> Receiver] Loại: metadata
+2026-05-19 07:32:56,263 ERROR Bắt được khóa phiên mã hóa: SSDFvA8PxL/8qtTeoiJyfs/Qbp5esDjMGlVfUOG3...
+2026-05-19 07:32:56,263 ERROR ❌ Không có Private Key của Receiver -> Không thể giải mã Session Key!
+2026-05-19 07:32:56,272 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-05-19 07:32:56,485 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:32:56,485 ERROR Bắt được đoạn 1 mã hóa: 7jqryA+1J4glX2FLnpqvxu9d4arBRMJ6ptbB0Ung...
+2026-05-19 07:32:56,485 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:32:56,675 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:32:56,876 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:32:56,876 ERROR Bắt được đoạn 2 mã hóa: jvNCnh7uscXzLSSETlqiwz/Oqi9TztVZUjSN2rLc...
+2026-05-19 07:32:56,879 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:32:57,077 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:32:57,275 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:32:57,282 ERROR Bắt được đoạn 3 mã hóa: Y/8+F1qTtpaqhR/U9KD7RviTyYlJNZ/MpjohkIT4...
+2026-05-19 07:32:57,282 ERROR ❌ Không có Session Key -> Dữ liệu hoàn toàn vô nghĩa!
+2026-05-19 07:32:57,471 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:32:57,479 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
+2026-05-19 07:35:20,194 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:35:34,616 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 51446)!
+2026-05-19 07:35:34,621 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:35:34,622 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:35:34,622 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:35:34,625 WARNING [Bắt gói tin Sender -> Receiver] Loại: metadata
+2026-05-19 07:35:34,625 ERROR Bắt được khóa phiên mã hóa: R3jlEzy4To7sQX741Om4jT3Y0wRLFD979UnbUOD9...
+2026-05-19 07:35:34,632 ERROR ❌ Cố tình giải mã RSA nhưng thất bại: Không có Private Key của Receiver!
+2026-05-19 07:35:34,640 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-05-19 07:35:34,844 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:35:34,844 ERROR Bắt được đoạn 1 mã hóa: 6ufBlll5Gs7pAsf/NctTDu66QP+bbKKJIMBCGPs4...
+2026-05-19 07:35:34,844 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:35:35,046 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:35:35,247 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:35:35,247 ERROR Bắt được đoạn 2 mã hóa: iWbBHvGKin/dLAJ0ZfZKfRfK22vXRSs+SqxFCThj...
+2026-05-19 07:35:35,247 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:35:35,427 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:35:35,625 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:35:35,625 ERROR Bắt được đoạn 3 mã hóa: TYerFjmetdNpuj+LRN4vqzl5urH44Z0vh63TOQoq...
+2026-05-19 07:35:35,625 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:35:35,806 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:35:35,821 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
+2026-05-19 07:40:11,397 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:40:30,322 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 53396)!
+2026-05-19 07:40:30,326 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:40:30,326 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:40:30,326 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:40:43,025 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:40:47,705 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 53408)!
+2026-05-19 07:40:47,706 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:40:47,706 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:40:47,706 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:41:00,705 WARNING [Bắt gói tin Sender -> Receiver] Loại: metadata
+2026-05-19 07:41:00,705 ERROR Bắt được khóa phiên mã hóa: PeOpNFS9idZHCBTUsur1IEjim0XRfbLIGvEqBMJP...
+2026-05-19 07:41:00,714 ERROR ❌ Cố tình giải mã RSA nhưng thất bại: Không có Private Key của Receiver!
+2026-05-19 07:41:00,722 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-05-19 07:41:14,729 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:41:14,729 ERROR Bắt được đoạn 1 mã hóa: EMu35v/RfLZGd0VRWjitAYqrHVsgbzAm7jK8+/sv...
+2026-05-19 07:41:14,729 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:41:15,015 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:41:19,279 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:41:19,290 ERROR Bắt được đoạn 2 mã hóa: 7HZUNeb9pefMhiq9eC26EgukjnFm2y1BABcTfpuJ...
+2026-05-19 07:41:19,295 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:41:19,551 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:41:23,663 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:41:23,666 ERROR Bắt được đoạn 3 mã hóa: GYZ6PRDLtd/0u7u3znVYL55iSRIeurNxLkzkzHLh...
+2026-05-19 07:41:23,666 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:41:23,928 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:41:23,944 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
+2026-05-19 07:44:43,439 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-05-19 07:44:55,055 WARNING Phát hiện Sender kết nối từ ('127.0.0.1', 61031)!
+2026-05-19 07:44:55,057 INFO Kẻ nghe lén đã kết nối lén tới Receiver tại cổng 65432.
+2026-05-19 07:44:55,059 WARNING [Bắt gói tin Sender -> Receiver] Loại: handshake
+2026-05-19 07:45:03,840 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-05-19 07:45:09,072 WARNING [Bắt gói tin Sender -> Receiver] Loại: metadata
+2026-05-19 07:45:09,072 ERROR Bắt được khóa phiên mã hóa: mKl9GB1Qkr5Ak2xn9Frv1UEoLZY8zvMOFhxNyBWl...
+2026-05-19 07:45:09,082 ERROR ❌ Cố tình giải mã RSA nhưng thất bại: Không có Private Key của Receiver!
+2026-05-19 07:45:09,090 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-05-19 07:45:16,650 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:45:16,654 ERROR Bắt được đoạn 1 mã hóa: QHTHKkMiepUdWOqxedpM68A9NKGJLMPN31zWsHXk...
+2026-05-19 07:45:16,657 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:45:16,862 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:45:18,390 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:45:18,390 ERROR Bắt được đoạn 2 mã hóa: HFdA68dVzgNABPS5q7jgivJvmK36hQ3tlSjkXBge...
+2026-05-19 07:45:18,394 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:45:18,594 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:45:19,562 WARNING [Bắt gói tin Sender -> Receiver] Loại: data
+2026-05-19 07:45:19,571 ERROR Bắt được đoạn 3 mã hóa: TlTT+Cc6q2t2UYJfrpEDlCViRbESYsCYMlIiODr/...
+2026-05-19 07:45:19,572 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key hợp lệ!
+2026-05-19 07:45:19,768 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-05-19 07:45:19,776 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
