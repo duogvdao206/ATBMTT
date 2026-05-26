@@ -1,3 +1,8 @@
 2026-05-12 07:54:01,305 INFO Receiver started.
 2026-05-12 07:54:19,529 INFO Connected by ('127.0.0.1', 63161)
 2026-05-12 07:54:41,520 ERROR Invalid handshake.
+2026-05-24 14:51:55,860 INFO Receiver started.
+2026-05-24 14:57:33,126 INFO Connected by ('127.0.0.1', 49270)
+2026-05-24 14:57:33,129 INFO Received Hello! Sending Ready!
+2026-05-24 14:58:02,348 INFO Metadata and session key verified.
+2026-05-24 14:58:19,300 ERROR Expected data packet.

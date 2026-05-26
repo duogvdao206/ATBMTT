@@ -143,3 +143,39 @@
 2026-05-19 07:45:18,594 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
 2026-05-19 07:45:19,762 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
 2026-05-19 07:45:19,776 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-24 14:59:00,649 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-24 14:59:00,655 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-24 14:59:08,153 INFO Phát hiện kết nối từ ('127.0.0.1', 50131)
+2026-05-24 14:59:08,155 INFO Nhận được lời chào: Hello!
+2026-05-24 14:59:08,156 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-24 14:59:38,428 INFO Đang gửi phản hồi: Ready!
+2026-05-24 15:00:18,311 INFO Nhận yêu cầu gửi file: 01A - AMORE MIO 2025 - KUN REMIX.mp3
+2026-05-24 15:00:18,319 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-24 15:00:18,321 INFO Chờ nhận các đoạn file...
+2026-05-24 15:00:21,692 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-24 15:00:25,380 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-24 15:00:26,875 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-24 15:00:26,894 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-24 15:01:08,966 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-24 15:01:08,966 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-24 15:01:14,951 INFO Phát hiện kết nối từ ('127.0.0.1', 57189)
+2026-05-24 15:01:14,956 INFO Nhận được lời chào: Hello!
+2026-05-24 15:01:14,958 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-24 15:01:49,613 INFO Đang gửi phản hồi: Ready!
+2026-05-24 15:01:51,337 INFO Nhận yêu cầu gửi file: 01A - AMORE MIO 2025 - KUN REMIX.mp3
+2026-05-24 15:01:51,349 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-24 15:01:51,355 INFO Chờ nhận các đoạn file...
+2026-05-24 15:01:54,194 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-24 15:01:56,518 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-24 15:01:57,518 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-24 15:01:57,552 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-24 15:03:09,130 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-24 15:03:09,132 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-24 15:03:12,691 INFO Phát hiện kết nối từ ('127.0.0.1', 53145)
+2026-05-24 15:03:12,701 INFO Nhận được lời chào: Hello!
+2026-05-24 15:03:12,705 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-24 15:03:16,396 INFO Đang gửi phản hồi: Ready!
+2026-05-24 15:03:19,514 INFO Nhận yêu cầu gửi file: 01A - AMORE MIO 2025 - KUN REMIX.mp3
+2026-05-24 15:03:19,522 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-24 15:03:19,525 INFO Chờ nhận các đoạn file...
+2026-05-24 15:03:21,949 ERROR [SECURITY] Lỗi toàn vẹn (Hash mismatch) tại đoạn 1!
