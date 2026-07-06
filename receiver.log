@@ -40,3 +40,65 @@
 2026-07-07 02:15:03,594 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 56043)
 2026-07-07 02:15:03,594 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
 2026-07-07 02:15:03,599 ERROR Nhãn thời gian Metadata đã hết hạn. Nghi ngờ tấn công phát lại (Replay attack)!
+2026-07-07 02:24:57,183 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:24:58,192 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 52180)
+2026-07-07 02:24:58,193 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:24:58,208 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:24:58,266 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:24:58,283 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-07-07 02:24:58,296 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-07-07 02:24:58,299 INFO Ghép nối file thành công và lưu tại: received_recording.mp3
+2026-07-07 02:26:56,803 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:26:57,762 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 53171)
+2026-07-07 02:26:57,762 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:26:57,770 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:26:57,807 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:26:57,823 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-07-07 02:26:57,842 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-07-07 02:26:57,844 INFO Ghép nối file thành công và lưu tại: received_recording.mp3
+2026-07-07 02:27:03,602 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:27:04,608 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 53174)
+2026-07-07 02:27:04,608 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:27:04,616 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:27:04,653 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:27:04,659 ERROR Lỗi toàn vẹn dữ liệu (Hash mismatch) tại đoạn 2!
+2026-07-07 02:27:28,510 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:27:29,511 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 61171)
+2026-07-07 02:27:29,511 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:27:29,514 ERROR Nhãn thời gian Metadata đã hết hạn. Nghi ngờ tấn công phát lại (Replay attack)!
+2026-07-07 02:29:27,685 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:29:28,688 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 59163)
+2026-07-07 02:29:28,688 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:29:28,696 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:29:28,734 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:29:28,752 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-07-07 02:29:28,770 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-07-07 02:29:28,771 INFO Ghép nối file thành công và lưu tại: received_recording.mp3
+2026-07-07 02:29:31,048 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:29:32,064 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 59164)
+2026-07-07 02:29:32,064 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:29:32,071 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:29:32,106 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:29:32,112 ERROR Lỗi toàn vẹn dữ liệu (Hash mismatch) tại đoạn 2!
+2026-07-07 02:29:34,392 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:29:35,408 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 59165)
+2026-07-07 02:29:35,408 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:29:35,413 ERROR Nhãn thời gian Metadata đã hết hạn. Nghi ngờ tấn công phát lại (Replay attack)!
+2026-07-07 02:34:34,050 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:34:34,854 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 60681)
+2026-07-07 02:34:34,854 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:34:34,861 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:34:34,900 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:34:34,916 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-07-07 02:34:34,936 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-07-07 02:34:34,937 INFO Ghép nối file thành công và lưu tại: received_recording.mp3
+2026-07-07 02:34:37,232 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:34:38,241 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 60682)
+2026-07-07 02:34:38,241 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:34:38,250 INFO Metadata và Khóa phiên được xác minh và giải mã thành công.
+2026-07-07 02:34:38,288 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-07-07 02:34:38,296 ERROR Lỗi toàn vẹn dữ liệu (Hash mismatch) tại đoạn 2!
+2026-07-07 02:34:40,591 INFO Người nhận đã khởi động và đang chờ kết nối.
+2026-07-07 02:34:41,610 INFO Phát hiện kết nối từ địa chỉ: ('127.0.0.1', 60683)
+2026-07-07 02:34:41,611 INFO Nhận được 'Hello!'. Đang gửi phản hồi 'Ready!'...
+2026-07-07 02:34:41,614 ERROR Nhãn thời gian Metadata đã hết hạn. Nghi ngờ tấn công phát lại (Replay attack)!

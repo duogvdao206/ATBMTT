@@ -1,128 +1,21 @@
-Hãy xây dựng mô phỏng hệ thống truyền file âm thanh an toàn theo các yêu cầu sau:
-
-Đề tài:
-Gửi tập tin âm thanh recording.mp3 được chia thành nhiều đoạn để truyền qua mạng không ổn định.
-
-Mục tiêu:
-
-* Đảm bảo bảo mật dữ liệu
-* Đảm bảo toàn vẹn dữ liệu
-* Xác thực người gửi
-* Phát hiện chỉnh sửa trái phép
-
-Yêu cầu kỹ thuật:
-
-1. Thuật toán sử dụng
-
-* Mã hóa dữ liệu: Triple DES
-* Trao khóa: RSA 2048-bit dùng OAEP padding
-* Chữ ký số: RSA + SHA-512
-* Kiểm tra toàn vẹn: SHA-512
-
-2. Luồng hoạt động
-
-Bước 1: Handshake
-
-* Người gửi gửi: "Hello!"
-* Người nhận phản hồi: "Ready!"
-
-Bước 2: Xác thực và trao khóa
-
-* Metadata gồm:
-
-  * filename
-  * timestamp
-  * duration
-* Người gửi:
-
-  * Tạo SessionKey cho Triple DES
-  * Ký metadata bằng RSA private key + SHA-512
-  * Mã hóa SessionKey bằng RSA public key của người nhận với OAEP
-* Gửi:
-  {
-  "metadata": "...",
-  "metadata_signature": "...",
-  "encrypted_session_key": "..."
-  }
-
-Bước 3: Chia và mã hóa file
-
-* Chia recording.mp3 thành 3 phần bằng nhau
-* Mỗi phần:
-
-  * Tạo IV riêng
-  * Mã hóa bằng Triple DES CBC mode
-  * Tính hash:
-    SHA-512(IV || ciphertext)
-  * Ký hash bằng RSA private key
-
-Gói tin mỗi đoạn:
-{
-"iv": "<Base64>",
-"cipher": "<Base64>",
-"hash": "<hex>",
-"sig": "<Signature>"
-}
-
-Bước 4: Phía người nhận
-
-* Giải mã SessionKey bằng RSA private key
-* Với từng đoạn:
-
-  * Kiểm tra hash
-  * Verify chữ ký số
-* Nếu tất cả hợp lệ:
-
-  * Giải mã Triple DES
-  * Ghép 3 đoạn thành recording.mp3
-  * Gửi ACK
-* Nếu có lỗi:
-
-  * Từ chối dữ liệu
-  * Gửi NACK (Integrity Error)
-
-3. Yêu cầu triển khai
-
-* Viết rõ:
-
-  * Sender
-  * Receiver
-* Có log từng bước:
-
-  * Handshake
-  * Generate key
-  * Encrypt
-  * Hash
-  * Sign
-  * Verify
-  * Decrypt
-  * Merge file
-* Encode dữ liệu binary bằng Base64
-* Có xử lý ngoại lệ nếu hash/signature sai
-
-4. Kết quả mong muốn
-
-* Chạy mô phỏng hoàn chỉnh
-* Sau khi nhận:
-
-  * File recording.mp3 được khôi phục chính xác
-* Nếu sửa dữ liệu:
-
-  * Hệ thống phát hiện lỗi integrity và trả NACK
-
-5. Công nghệ đề xuất
-
-* Python
-* pycryptodome
-* hashlib
-* base64
-* json
-* os
-
-Hãy viết:
-
-* Kiến trúc hệ thống
-* Giải thích từng bước
-* Source code đầy đủ
-* Có comment rõ ràng
-* Có ví dụ output khi chạy chương trình
+Đề tài 7: Gửi tập tin âm thanh chia thành nhiều đoạn 
+Mô tả: Một nhà sản xuất âm thanh gửi file recording.mp3 chứa bản ghi âm quan 
+trọng đến studio, chia thành 3 đoạn để đảm bảo truyền an toàn qua mạng không ổn định. 
+File được mã hóa và ký số để bảo vệ nội dung, với tính toàn vẹn được kiểm tra nhằm 
+ngăn chặn sửa đổi trái phép. 
+Yêu cầu: 
+Mã hóa: Triple DES 
+Trao khóa & ký số: RSA 2048-bit (OAEP + SHA-512) 
+Kiểm tra tính toàn vẹn: SHA-512 
+Luồng xử lý: 
+Handshake: Người gửi gửi "Hello!". Người nhận trả lời "Ready!". 
+Xác thực & Trao khóa: Người gửi ký metadata (tên file + timestamp + thời lượng) 
+bằng RSA/SHA-512. Người gửi mã hóa SessionKey bằng RSA 2048-bit (OAEP) và gửi. 
+Mã hóa & Kiểm tra toàn vẹn: Tạo IV. Chia file thành 3 đoạn, mã hóa mỗi đoạn 
+bằng Triple DES. Tính hash: SHA-512(IV || ciphertext) cho mỗi đoạn. Gói tin gửi (mỗi 
+đoạn): { "iv": "<Base64>", "cipher": "<Base64>", "hash": "<hex>", "sig": "<Signature>" 
+} 
+Phía Người nhận: Kiểm tra hash và chữ ký mỗi đoạn. Nếu tất cả hợp lệ: Giải mã 
+từng đoạn bằng Triple DES, ghép và lưu file recording.mp3, gửi ACK tới Người gửi. 
+Ngược lại nếu hash hoặc chữ ký không hợp lệ: Từ chối, gửi NACK (lỗi integrity) tới 
+Người gửi. 

@@ -238,7 +238,7 @@ class GiaoDienNguoiGui(ctk.CTk):
             giao_thuc.gui_tin_nhan(self.ket_noi, {
                 "type": "data", "part": p_idx, "iv": base64.b64encode(iv).decode('utf-8'),
                 "cipher": base64.b64encode(cipher).decode('utf-8'),
-                "hash": base64.b64encode(h_val).decode('utf-8'), 
+                "hash": h_val.hex(), 
                 "sig": base64.b64encode(p_sig).decode('utf-8'),
                 "timestamp": ts_goi,
                 "seq": p_idx

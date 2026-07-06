@@ -107,7 +107,7 @@ def khoi_dong_nguoi_nhan():
                 phan = tin_nhan["part"]
                 iv = base64.b64decode(tin_nhan["iv"])
                 ma_hoa_phan = base64.b64decode(tin_nhan["cipher"])
-                ma_hash = base64.b64decode(tin_nhan["hash"])
+                ma_hash = bytes.fromhex(tin_nhan["hash"])
                 chu_ky_goi = base64.b64decode(tin_nhan["sig"])
                 nhan_thoi_gian_goi = tin_nhan["timestamp"]
                 thu_tu = tin_nhan["seq"]

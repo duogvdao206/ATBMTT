@@ -1,113 +1,262 @@
-# Hướng Dẫn Chạy Hệ Thống Truyền File Âm Thanh An Toàn (Đề Tài 7)
-
-Tài liệu này hướng dẫn chi tiết cách cài đặt, chạy ứng dụng bằng tiếng Việt và các kiến thức trọng tâm phục vụ cho buổi vấn đáp.
+# 📋 HƯỚNG DẪN CHẠY DEMO - ĐỀ TÀI 7
+## Gửi Tập Tin Âm Thanh Chia Thành Nhiều Đoạn
 
 ---
 
-## I. HƯỚNG DẪN CÀI ĐẶT & CHẠY HỆ THỐNG
+## 🔧 CÀI ĐẶT MÔI TRƯỜNG
 
-### Bước 1: Cài đặt thư viện cần thiết
-Đảm bảo máy tính của bạn đã cài đặt Python (phiên bản 3.7 trở lên). Mở terminal tại thư mục dự án và chạy:
 ```bash
-pip install -r requirements.txt
+pip install pycryptodome customtkinter
 ```
-*(Thư viện cốt lõi là `pycryptodome` và `customtkinter` để thiết lập mã hóa và giao diện đồ họa).*
-
-### Bước 2: Sinh khóa RSA và tạo file test mẫu
-Trước khi bắt đầu, bạn cần chạy 2 lệnh sau để sinh cặp khóa công khai/bí mật và tạo file âm thanh kiểm thử:
-1. **Sinh cặp khóa RSA (2048-bit):**
-   ```bash
-   python sinh_khoa.py
-   ```
-   *Lệnh này sinh ra 4 file: `sender_public.pem`, `sender_private.pem`, `receiver_public.pem`, `receiver_private.pem`.*
-2. **Tạo file âm thanh mẫu (.mp3) dung lượng ~1MB:**
-   ```bash
-   python tao_mp3_ao.py
-   ```
-   *Lệnh này sinh ra file `recording.mp3` trong thư mục.*
 
 ---
 
-### Bước 3: Khởi chạy Giao diện đồ họa (GUI) - Khuyên dùng khi vấn đáp
-Bạn có 2 sự lựa chọn để khởi động giao diện đồ họa:
+## 📁 CẤU TRÚC FILE DỰ ÁN
 
-#### Cách 1: Bật nhanh cả 3 cửa sổ cùng lúc (Chỉ 1 lệnh)
+| File | Vai trò |
+|---|---|
+| `tien_ich_mat_ma.py` | Thư viện mật mã: Triple DES, RSA, SHA-512 |
+| `giao_thuc.py` | Giao thức truyền thông qua Socket (JSON framing) |
+| `cau_hinh.py` | Cấu hình: HOST, PORT, thời gian hết hạn |
+| `sinh_khoa.py` | Sinh cặp khóa RSA 2048-bit |
+| `tao_mp3_ao.py` | Tạo file recording.mp3 giả lập |
+| `nhan_gui.py` | **GUI Người Nhận** (Studio/Receiver) |
+| `gui_gui.py` | **GUI Người Gửi** (Nhà Sản Xuất/Sender) |
+| `nghe_len_gui.py` | **GUI Kẻ Nghe Lén** (MITM Proxy/Attacker) |
+| `chay_tat_ca.py` | Khởi động cả 3 GUI cùng lúc |
+| `nguoi_nhan.py` | Người Nhận dòng lệnh (CLI) |
+| `nguoi_gui.py` | Người Gửi dòng lệnh (CLI) |
+
+---
+
+## 🚀 CÁCH CHẠY NHANH (GẦY NẤT)
+
 ```bash
+# Bước 0: Sinh khóa + tạo file mp3 mẫu
+python sinh_khoa.py
+python tao_mp3_ao.py
+
+# Bước 1: Khởi động 3 cửa sổ GUI
 python chay_tat_ca.py
 ```
-*Lệnh này sẽ tự động bật đồng thời cả 3 giao diện:*
-*   **Người Nhận (Receiver - `nhan_gui.py`)**
-*   **Kẻ Nghe Lén (Eavesdropper / Proxy - `nghe_len_gui.py`)**
-*   **Người Gửi (Sender - `gui_gui.py`)**
-
-#### Cách 2: Khởi chạy độc lập từng giao diện
-Nếu muốn chia ra nhiều cửa sổ dòng lệnh riêng biệt:
-1. **Bật giao diện Người nhận:** `python nhan_gui.py` (Bấm **BẬT CHẾ ĐỘ CHỜ ĐỂ NHẬN**)
-2. **Bật giao diện Nghe lén (Proxy):** `python nghe_len_gui.py` (Bấm **BẮT ĐẦU NGHE LÉN**)
-3. **Bật giao diện Người gửi:** `python gui_gui.py`
 
 ---
 
-### Bước 4: Khởi chạy bằng Dòng lệnh (CLI)
-Nếu không muốn dùng GUI, bạn có thể thực hiện truyền file trực tiếp thông qua CLI:
-1. **Phía Nhận:**
-   ```bash
-   python nguoi_nhan.py
-   ```
-2. **Phía Gửi:**
-   ```bash
-   python nguoi_gui.py
-   ```
+## 📖 LUỒNG XỬ LÝ TỪNG BƯỚC (Demo Chi Tiết)
+
+### ════════════════════════════════════
+### BƯỚC 0 — CHUẨN BỊ (Chạy 1 lần)
+### ════════════════════════════════════
+
+```bash
+python sinh_khoa.py    # Tạo sender_private.pem, sender_public.pem,
+                       #        receiver_private.pem, receiver_public.pem
+python tao_mp3_ao.py   # Tạo recording.mp3 (~1MB) nếu chưa có
+```
 
 ---
 
-### Bước 5: Chạy các kịch bản kiểm thử & Đo hiệu năng
-Thư mục `test/` chứa các kịch bản tự động để chứng minh tính năng an toàn bảo mật:
-- **Đo hiệu năng mật mã (Mã hóa/Giải mã):**
-  ```bash
-  python test/do_hieu_nang_mat_ma.py
-  ```
-- **Kiểm thử truyền nhận thông thường:**
-  ```bash
-  python test/kiem_thu_chuan.py
-  ```
-- **Kiểm thử chống sửa đổi dữ liệu (Tamper):**
-  ```bash
-  python test/kiem_thu_tamper.py
-  ```
-- **Kiểm thử chống tấn công phát lại (Replay):**
-  ```bash
-  python test/kiem_thu_replay.py
-  ```
+### ════════════════════════════════════
+### KỊCH BẢN 1: TRUYỀN FILE BÌNH THƯỜNG ✅
+### ════════════════════════════════════
+
+**Mở 2 terminal:**
+
+**Terminal 1 — Người Nhận (Studio):**
+```bash
+python nhan_gui.py
+# Nhấn "BẬT CHẾ ĐỘ CHỜ ĐỂ NHẬN"
+```
+
+**Terminal 2 — Người Gửi (Nhà Sản Xuất):**
+```bash
+python gui_gui.py
+# 1. Chọn file recording.mp3
+# 2. Chọn kết nối "Máy Nhận (Bình thường)"
+# 3. Nhấn "BƯỚC 1: KẾT NỐI & BẮT TAY"  → Hello! / Ready!
+# 4. Nhấn "BƯỚC 2: TẠO KHÓA PHIÊN & GỬI METADATA"
+# 5. Nhấn "BƯỚC 3: MÃ HÓA & GỬI ĐOẠN 1/3"
+# 6. Nhấn "BƯỚC 4: MÃ HÓA & GỬI ĐOẠN 2/3"
+# 7. Nhấn "BƯỚC 5: MÃ HÓA & GỬI ĐOẠN 3/3"
+```
+
+**Kết quả mong đợi:**
+- Người Nhận hiển thị: `"HOÀN TẤT: Đã ghép đủ các đoạn và lưu file thành công: received_recording.mp3"`
+- Người Gửi hiển thị: `"TẤT CẢ HOÀN TẤT! File đã được truyền an toàn."`
 
 ---
 
-## II. KIẾN THỨC TRỌNG TÂM PHỤC VỤ VẤN ĐÁP (Q&A)
+### ════════════════════════════════════
+### KỊCH BẢN 2: PHÁT HIỆN GIẢ MẠO DỮ LIỆU ❌
+### ════════════════════════════════════
 
-### 1. Tại sao phải dùng kết hợp cả Triple DES (3DES) và RSA?
-- **3DES (Mã hóa đối xứng):** Dùng để mã hóa dữ liệu file âm thanh dung lượng lớn vì tốc độ mã hóa rất nhanh và tốn ít tài nguyên. Tuy nhiên, 3DES gặp khó khăn trong việc phân phối khóa bí mật một cách an toàn qua mạng công cộng.
-- **RSA (Mã hóa bất đối xứng):** Dùng để mã hóa và chuyển giao an toàn khóa phiên (Session Key) của 3DES từ Người gửi sang Người nhận. Quá trình này tận dụng ưu điểm bảo mật cao của khóa công khai/bí mật của RSA để bảo vệ khóa đối xứng.
+**Chạy kiểm thử tự động:**
+```bash
+python test/kiem_thu_tamper.py
+```
 
-### 2. Luồng bảo mật chi tiết của hệ thống (4 Bước cốt lõi)
-1. **Bước 1: Bắt tay (Handshake):** Người gửi gửi `"Hello!"`, người nhận xác nhận trạng thái sẵn sàng bằng `"Ready!"`.
-2. **Bước 2: Xác thực & Trao khóa:**
-   - Người gửi tạo **khóa phiên đối xứng** ngẫu nhiên dùng cho 3DES.
-   - Người gửi **ký số** lên Metadata (tên file, nhãn thời gian,...) bằng khóa bí mật RSA của mình.
-   - Người gửi **mã hóa khóa phiên** bằng khóa công khai RSA của Người nhận (dùng cơ chế đệm tối ưu **PKCS1_OAEP** cùng mã băm **SHA-512**).
-   - Người nhận giải mã khóa phiên bằng khóa bí mật RSA của mình, và xác minh chữ ký Metadata bằng khóa công khai RSA của Người gửi.
-3. **Bước 3: Chia nhỏ và mã hóa dữ liệu:**
-   - File âm thanh được chia làm 3 phần đều nhau để truyền tải hiệu quả qua mạng.
-   - Mỗi phần được mã hóa bằng 3DES chế độ **CBC**, sử dụng vector khởi tạo **IV** ngẫu nhiên độc lập.
-   - Để bảo vệ tính toàn vẹn (Integrity), hệ thống tính mã băm **SHA-512(IV || Dữ liệu mã hóa)**.
-   - Để xác thực (Authentication), người gửi dùng khóa bí mật RSA ký số lên mã băm và thông tin số thứ tự gói tin (`seq`), nhãn thời gian (`timestamp`).
-4. **Bước 4: Người nhận kiểm tra & Ghép file:**
-   - Người nhận tính toán lại mã băm SHA-512 của gói tin nhận được và đối chiếu với mã băm đính kèm (Tính toàn vẹn).
-   - Xác minh chữ ký số bằng khóa công khai RSA của Người gửi (Xác thực & Không chối bỏ).
-   - Giải mã từng phần bằng 3DES, sắp xếp lại theo số thứ tự (`seq`) và ghép thành file âm thanh gốc.
+**Hoặc thủ công:**
+```bash
+# Terminal 1
+python nguoi_nhan.py
 
-### 3. Hệ thống chống các kiểu tấn công mạng như thế nào?
-- **Tấn công nghe lén (Eavesdropping):** Kẻ tấn công trên đường truyền chỉ thu được dữ liệu mã hóa (Ciphertext) và khóa phiên đã mã hóa. Nếu không có khóa bí mật RSA của Người nhận, kẻ tấn công không thể giải mã để lấy khóa phiên, từ đó không thể giải mã dữ liệu file âm thanh.
-- **Tấn công sửa đổi dữ liệu (Tampering):** Nếu kẻ tấn công thay đổi dù chỉ 1 bit dữ liệu trên đường truyền, khi Người nhận tính toán lại mã băm **SHA-512(IV || Ciphertext)** sẽ thấy khác biệt hoàn toàn với mã băm ban đầu. Đồng thời chữ ký số trên mã băm cũng bị sai lệch. Hệ thống sẽ phát hiện ngay lập tức, từ chối file và trả về mã lỗi **NACK**.
-- **Tấn công phát lại (Replay Attack):** Kẻ tấn công ghi lại một gói tin hợp lệ trong quá khứ rồi gửi lại. Hệ thống ngăn chặn bằng 2 cơ chế:
-  1. **Nhãn thời gian (Timestamp):** Nếu thời gian gói tin lệch quá 60 giây (`MAX_TIME_DIFF = 60`) so với thời gian hiện tại của Người nhận, gói tin sẽ bị loại bỏ.
-  2. **Số thứ tự (Sequence number `seq`):** Người nhận lưu giữ danh sách số thứ tự đã nhận trong phiên truyền. Nếu nhận được số thứ tự trùng lặp hoặc sai thứ tự mong đợi, hệ thống lập tức phát hiện tấn công và hủy bỏ kết nối.
+# Terminal 2
+python nguoi_gui.py --tamper
+```
+
+**Điều gì xảy ra:**
+- Người gửi cố tình sửa đổi 1 byte của Đoạn 2 SAU KHI đã tính Hash và ký số
+- Người nhận tính lại `SHA-512(IV || ciphertext)` → không khớp Hash đã nhận
+- → Người nhận gửi **NACK** (lỗi integrity) ngay lập tức
+- → Quá trình truyền bị HỦY, file không được lưu
+
+**Kết quả mong đợi trong log:**
+```
+[SECURITY] Lỗi toàn vẹn dữ liệu (Hash mismatch) tại Đoạn 2!
+```
+
+---
+
+### ════════════════════════════════════
+### KỊCH BẢN 3: PHÁT HIỆN TẤN CÔNG PHÁT LẠI ❌
+### ════════════════════════════════════
+
+**Chạy kiểm thử tự động:**
+```bash
+python test/kiem_thu_replay.py
+```
+
+**Hoặc thủ công:**
+```bash
+# Terminal 1
+python nguoi_nhan.py
+
+# Terminal 2
+python nguoi_gui.py --replay
+```
+
+**Điều gì xảy ra:**
+- Người gửi gửi Metadata với `timestamp` bị lùi 100 giây vào quá khứ
+- Người nhận kiểm tra: `|time.time() - timestamp| > MAX_TIME_DIFF (60s)` → vi phạm
+- → Người nhận gửi **NACK** (Timestamp hết hạn), từ chối kết nối ngay từ bước Metadata
+
+**Kết quả mong đợi trong log:**
+```
+[SECURITY] Phát hiện tấn công phát lại! (Timestamp quá hạn)
+```
+
+---
+
+### ════════════════════════════════════
+### KỊCH BẢN 4: KẺ NGHE LÉN (MITM Proxy) 🕵️
+### ════════════════════════════════════
+
+**Mở 3 terminal theo đúng thứ tự:**
+
+```bash
+# Terminal 1 — Người Nhận (bật trước)
+python nhan_gui.py
+# → Nhấn "BẬT CHẾ ĐỘ CHỜ ĐỂ NHẬN" (port 65432)
+
+# Terminal 2 — Kẻ Nghe Lén (bật sau)
+python nghe_len_gui.py
+# → Nhấn "BẮT ĐẦU NGHE LÉN" (proxy tại port 65433 → forward đến 65432)
+
+# Terminal 3 — Người Gửi (kết nối qua proxy)
+python gui_gui.py
+# → Chọn file, chọn "Kẻ Nghe Lén (Đi qua Proxy của Hacker)"
+# → Thực hiện các bước gửi như bình thường
+```
+
+**Chế độ "Chỉ Nghe Lén":**
+- Kẻ nghe lén thấy toàn bộ gói tin nhưng KHÔNG giải mã được:
+  - Khóa phiên mã hóa RSA → cần `receiver_private.pem` (không có)
+  - Ciphertext Triple DES → cần Session Key (không có)
+- File vẫn truyền thành công đến người nhận
+
+**Chế độ "Chỉnh Sửa Dữ Liệu (Phá hoại)":**
+- Kẻ nghe lén sửa 1 byte ciphertext trước khi forward
+- Người nhận phát hiện Hash mismatch → gửi NACK
+- → Quá trình truyền bị HỦY
+
+---
+
+## 🧪 CHẠY TẤT CẢ KIỂM THỬ TỰ ĐỘNG
+
+```bash
+python test/kiem_thu_chuan.py   # Test truyền file thành công
+python test/kiem_thu_tamper.py  # Test phát hiện giả mạo dữ liệu
+python test/kiem_thu_replay.py  # Test phát hiện tấn công phát lại
+python test/do_hieu_nang_mat_ma.py  # Đo hiệu năng Triple DES
+```
+
+---
+
+## 📊 CHI TIẾT KỸ THUẬT MẬT MÃ
+
+### Handshake
+```
+Sender  ──[Hello!]──►  Receiver
+Sender  ◄──[Ready!]──  Receiver
+```
+
+### Xác Thực & Trao Khóa
+```
+Sender sinh SessionKey (24 bytes) cho Triple DES
+Sender ký: RSA-PSS/SHA-512(filename|timestamp|duration) → Signature
+Sender gửi: { metadata, enc_session_key=RSA_OAEP_SHA512(SessionKey), sig }
+Receiver xác minh Signature + Giải mã SessionKey
+```
+
+### Gửi Từng Đoạn (3 lần)
+```
+Sender:
+  IV = random(8 bytes)
+  cipher_i = 3DES_CBC(SessionKey, IV, segment_i)
+  hash_i   = SHA-512(IV || cipher_i)             ← hex string
+  sig_i    = RSA-PSS/SHA-512(hash_i || seq || ts)
+  Gửi: { iv, cipher, hash, sig, timestamp, seq }
+
+Receiver (mỗi đoạn):
+  1. Kiểm tra seq không trùng & đúng thứ tự
+  2. Tính lại SHA-512(IV || cipher) → so sánh hash → NACK nếu sai
+  3. Xác minh chữ ký RSA-PSS → NACK nếu sai
+  4. Giải mã 3DES_CBC → lưu segment
+  5. Gửi ACK_PART
+
+Sau đủ 3 đoạn:
+  Ghép segment_1 + segment_2 + segment_3 → received_recording.mp3
+  Gửi ACK_COMPLETE
+```
+
+### Sơ Đồ Gói Tin (Đề Bài)
+```json
+{
+  "iv":     "<Base64>",
+  "cipher": "<Base64>",
+  "hash":   "<hex SHA-512>",
+  "sig":    "<Base64 RSA-PSS Signature>"
+}
+```
+
+---
+
+## ⚡ HIỆU NĂNG TRIPLE DES (đo thực tế)
+
+| Kích thước | Mã hóa | Giải mã | Tổng |
+|---|---|---|---|
+| 10 KB  | ~0.001 s | ~0.002 s | ~0.003 s |
+| 1 MB   | ~0.035 s | ~0.031 s | ~0.066 s |
+| 10 MB  | ~0.329 s | ~0.312 s | ~0.641 s |
+
+---
+
+## ❗ LỖI THƯỜNG GẶP & CÁCH SỬA
+
+| Lỗi | Nguyên nhân | Cách xử lý |
+|---|---|---|
+| `OSError: [WinError 10048]` | Cổng đang bị chiếm | Tắt cửa sổ cũ hoặc chờ 30s |
+| `FileNotFoundError: sender_private.pem` | Chưa sinh khóa | Chạy `python sinh_khoa.py` |
+| `Không tìm thấy file recording.mp3` | Chưa có file mẫu | Chạy `python tao_mp3_ao.py` |
+| Người Nhận chưa bật mà Gửi đã kết nối | Sai thứ tự | Bật Receiver TRƯỚC, rồi mới bật Sender |
+| Bắt tay thất bại khi qua Proxy | Receiver chưa bật khi Proxy connect | Bật Receiver → Proxy → Sender theo thứ tự |

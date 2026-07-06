@@ -125,7 +125,7 @@ def khoi_dong_nguoi_gui(duong_dan_file, gia_mao_du_lieu=False, tan_cong_phat_lai
                     "part": chi_so_phan,
                     "iv": base64.b64encode(iv).decode('utf-8'),
                     "cipher": base64.b64encode(ma_hoa_phan_gui).decode('utf-8'),
-                    "hash": base64.b64encode(ma_hash).decode('utf-8'),
+                    "hash": ma_hash.hex(),
                     "sig": base64.b64encode(chu_ky_goi).decode('utf-8'),
                     "timestamp": nhan_thoi_gian_goi,
                     "seq": thu_tu

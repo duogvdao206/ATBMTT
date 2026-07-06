@@ -170,10 +170,12 @@ class GiaoDienNguoiNhan(ctk.CTk):
                 # 2. Nhận Metadata
                 msg = giao_thuc.nhan_tin_nhan(conn)
                 if not msg or msg.get("type") != "metadata": return
-                self.ghi_nhat_ky("INFO", f"Nhận yêu cầu truyền file: {msg.get('filename')}")
-                
+
+                # Gán tên file từ metadata — BẮT BUỘC để dùng khi ghép và lưu file cuối
+                ten_file = msg["filename"]
                 ts = msg["timestamp"]
                 duration = msg.get("duration")
+                self.ghi_nhat_ky("INFO", f"Nhận yêu cầu truyền file: {ten_file}")
 
                 # Chống tấn công phát lại dựa trên nhãn thời gian
                 if abs(time.time() - ts) > MAX_TIME_DIFF:
@@ -214,7 +216,7 @@ class GiaoDienNguoiNhan(ctk.CTk):
                     phan = msg["part"]
                     iv = base64.b64decode(msg["iv"])
                     cipher = base64.b64decode(msg["cipher"])
-                    hash_val = base64.b64decode(msg["hash"])
+                    hash_val = bytes.fromhex(msg["hash"])
                     p_sig = base64.b64decode(msg["sig"])
                     ts_goi = msg.get("timestamp", int(time.time()))
                     thu_tu = msg.get("seq", i + 1)

@@ -207,3 +207,39 @@
 2026-05-26 07:45:10,104 WARNING ⚠️ ĐANG TIẾN HÀNH CHỈNH SỬA DỮ LIỆU ĐỂ PHÁ HOẠI (MITM)...
 2026-05-26 07:45:10,114 WARNING Đã thay đổi cipher text và chuyển tiếp cho Receiver để gây lỗi Integrity!
 2026-05-26 07:45:10,258 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: NACK_INTEGRITY
+2026-07-07 02:36:15,158 INFO Proxy trung gian đã mở tại cổng 65433.
+2026-07-07 02:36:17,368 WARNING Phát hiện Sender kết nối tới proxy từ ('127.0.0.1', 56751)!
+2026-07-07 02:36:17,371 INFO Kẻ nghe lén đã kết nối lén tới Receiver thật tại cổng 65432.
+2026-07-07 02:36:17,373 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: handshake
+2026-07-07 02:36:19,518 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-07-07 02:36:22,949 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: metadata
+2026-07-07 02:36:22,952 ERROR Bắt được khóa phiên mã hóa: PuiaEZboYP5gRwuRR86RiIFLbYlCffg5/cEN/NF/...
+2026-07-07 02:36:22,960 ERROR ❌ Cố tình giải mã RSA nhưng thất bại: Không có Private Key của Receiver!
+2026-07-07 02:36:22,968 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-07-07 02:36:26,112 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: data
+2026-07-07 02:36:26,115 ERROR Bắt được đoạn 1 mã hóa: jJXVuyG0w2AooBWFxr0D9vVLtFYLCJzVBcoN5oQ2...
+2026-07-07 02:36:26,115 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key của phiên truyền!
+2026-07-07 02:36:26,318 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-07-07 02:36:26,807 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: data
+2026-07-07 02:36:26,808 ERROR Bắt được đoạn 2 mã hóa: K5tjS57a4CYZCGbfEN36bsWoC93N7xdxsZgEJMoG...
+2026-07-07 02:36:26,808 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key của phiên truyền!
+2026-07-07 02:36:27,002 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-07-07 02:36:27,616 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: data
+2026-07-07 02:36:27,618 ERROR Bắt được đoạn 3 mã hóa: hXfmSDiy5bSqlkFZMAfa3J5/nOK768o1cZETe5iK...
+2026-07-07 02:36:27,620 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key của phiên truyền!
+2026-07-07 02:36:27,796 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_PART
+2026-07-07 02:36:27,814 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_COMPLETE
+2026-07-07 02:36:39,260 WARNING Phát hiện Sender kết nối tới proxy từ ('127.0.0.1', 52683)!
+2026-07-07 02:36:39,260 INFO Kẻ nghe lén đã kết nối lén tới Receiver thật tại cổng 65432.
+2026-07-07 02:36:39,266 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: handshake
+2026-07-07 02:36:40,358 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: Ready!
+2026-07-07 02:36:42,821 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: metadata
+2026-07-07 02:36:42,825 ERROR Bắt được khóa phiên mã hóa: WPNVoHXs7g9qwBLpP/z7VFyZFwZK4l2kJjS29ZYm...
+2026-07-07 02:36:42,825 ERROR ❌ Cố tình giải mã RSA nhưng thất bại: Không có Private Key của Receiver!
+2026-07-07 02:36:42,839 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: ACK_META
+2026-07-07 02:36:49,252 WARNING [Bắt gói tin Sender -> Receiver] Loại gói: data
+2026-07-07 02:36:49,255 ERROR Bắt được đoạn 1 mã hóa: QsdmTI2OxgPzzYoAeyYWMV1MRYHOXRZg7JSd+mqD...
+2026-07-07 02:36:49,256 ERROR ❌ Cố tình giải mã 3DES nhưng thất bại: Không có Session Key của phiên truyền!
+2026-07-07 02:36:49,268 WARNING ⚠️ ĐANG TIẾN HÀNH CHỈNH SỬA DỮ LIỆU ĐỂ PHÁ HOẠI (MITM)...
+2026-07-07 02:36:49,278 WARNING Đã thay đổi ciphertext và chuyển tiếp cho Receiver để gây lỗi Integrity!
+2026-07-07 02:36:49,325 INFO [Bắt gói tin Receiver -> Sender] Trạng thái: NACK_INTEGRITY

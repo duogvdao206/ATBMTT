@@ -36,3 +36,76 @@
 2026-07-07 02:15:03,594 INFO Nhận được phản hồi: Ready!
 2026-07-07 02:15:03,597 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
 2026-07-07 02:15:03,599 ERROR Người nhận từ chối Metadata. Lý do: Nhãn thời gian hết hạn
+2026-07-07 02:24:29,278 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:24:29,278 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:24:58,192 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:24:58,193 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:24:58,193 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:24:58,206 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:24:58,233 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:24:58,253 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:24:58,275 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:24:58,299 INFO Quá trình truyền file hoàn tất thành công! Đã nhận ACK cuối cùng.
+2026-07-07 02:26:57,762 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:26:57,762 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:26:57,763 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:26:57,766 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:26:57,790 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:26:57,810 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:26:57,829 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:26:57,844 INFO Quá trình truyền file hoàn tất thành công! Đã nhận ACK cuối cùng.
+2026-07-07 02:27:04,608 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:27:04,608 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:27:04,608 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:27:04,612 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:27:04,638 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:27:04,656 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:27:04,676 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:27:04,676 ERROR Truyền file thất bại. Phản hồi nhận được: None
+2026-07-07 02:27:29,511 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:27:29,511 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:27:29,512 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:27:29,514 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:27:29,515 ERROR Người nhận từ chối Metadata. Lý do: Nhãn thời gian hết hạn
+2026-07-07 02:29:28,688 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:29:28,688 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:29:28,688 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:29:28,692 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:29:28,716 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:29:28,738 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:29:28,756 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:29:28,772 INFO Quá trình truyền file hoàn tất thành công! Đã nhận ACK cuối cùng.
+2026-07-07 02:29:32,063 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:29:32,064 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:29:32,064 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:29:32,068 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:29:32,091 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:29:32,109 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:29:32,126 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:29:32,126 ERROR Truyền file thất bại. Phản hồi nhận được: None
+2026-07-07 02:29:35,408 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:29:35,408 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:29:35,408 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:29:35,413 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:29:35,413 ERROR Người nhận từ chối Metadata. Lý do: Nhãn thời gian hết hạn
+2026-07-07 02:34:34,854 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:34:34,854 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:34:34,855 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:34:34,858 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:34:34,881 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:34:34,902 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:34:34,920 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:34:34,937 INFO Quá trình truyền file hoàn tất thành công! Đã nhận ACK cuối cùng.
+2026-07-07 02:34:38,241 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:34:38,241 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:34:38,241 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:34:38,246 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:34:38,268 INFO Đã gửi thành công Đoạn 1/3.
+2026-07-07 02:34:38,292 INFO Đã gửi thành công Đoạn 2/3.
+2026-07-07 02:34:38,310 INFO Đã gửi thành công Đoạn 3/3.
+2026-07-07 02:34:38,310 ERROR Truyền file thất bại. Phản hồi nhận được: None
+2026-07-07 02:34:41,610 INFO Đã kết nối thành công tới Người nhận.
+2026-07-07 02:34:41,610 INFO Đã gửi thông điệp chào: Hello!
+2026-07-07 02:34:41,611 INFO Nhận được phản hồi: Ready!
+2026-07-07 02:34:41,614 INFO Đã gửi dữ liệu Metadata và Khóa phiên mã hóa RSA.
+2026-07-07 02:34:41,615 ERROR Người nhận từ chối Metadata. Lý do: Nhãn thời gian hết hạn
