@@ -179,3 +179,37 @@
 2026-05-24 15:03:19,522 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
 2026-05-24 15:03:19,525 INFO Chờ nhận các đoạn file...
 2026-05-24 15:03:21,949 ERROR [SECURITY] Lỗi toàn vẹn (Hash mismatch) tại đoạn 1!
+2026-05-26 07:43:17,081 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-05-26 07:43:17,087 INFO Đang chờ dữ liệu từng bước từ Sender...
+2026-05-26 07:43:30,909 INFO Phát hiện kết nối từ ('127.0.0.1', 50139)
+2026-05-26 07:43:30,909 INFO Nhận được lời chào: Hello!
+2026-05-26 07:43:30,909 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-26 07:43:37,895 INFO Đang gửi phản hồi: Ready!
+2026-05-26 07:43:40,323 INFO Nhận yêu cầu gửi file: 07A - Se Khong Con Nua - Dani x Vkey .mp3
+2026-05-26 07:43:40,334 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-26 07:43:40,346 INFO Chờ nhận các đoạn file...
+2026-05-26 07:43:45,147 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-26 07:43:47,189 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-26 07:43:48,705 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-26 07:43:48,739 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-26 07:44:05,386 INFO Phát hiện kết nối từ ('127.0.0.1', 60921)
+2026-05-26 07:44:05,399 INFO Nhận được lời chào: Hello!
+2026-05-26 07:44:05,399 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-26 07:44:13,336 INFO Đang gửi phản hồi: Ready!
+2026-05-26 07:44:19,167 INFO Nhận yêu cầu gửi file: 07A - Se Khong Con Nua - Dani x Vkey .mp3
+2026-05-26 07:44:19,177 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-26 07:44:19,199 INFO Chờ nhận các đoạn file...
+2026-05-26 07:44:23,948 INFO Đã nhận, xác minh và giải mã thành công Đoạn 1/3.
+2026-05-26 07:44:34,786 INFO Đã nhận, xác minh và giải mã thành công Đoạn 2/3.
+2026-05-26 07:44:36,450 INFO Đã nhận, xác minh và giải mã thành công Đoạn 3/3.
+2026-05-26 07:44:36,471 INFO HOÀN TẤT: Đã ghép đủ 3 đoạn và lưu file thành công!
+2026-05-26 07:44:57,649 INFO Phát hiện kết nối từ ('127.0.0.1', 60927)
+2026-05-26 07:44:57,677 INFO Nhận được lời chào: Hello!
+2026-05-26 07:44:57,680 INFO Vui lòng nhập và bấm 'GỬI PHẢN HỒI' trên giao diện...
+2026-05-26 07:44:59,599 INFO Đang gửi phản hồi: Ready!
+2026-05-26 07:45:06,245 INFO Nhận yêu cầu gửi file: 07A - Se Khong Con Nua - Dani x Vkey .mp3
+2026-05-26 07:45:06,267 INFO Giải mã khóa Phiên RSA thành công. Xác thực chữ ký đúng.
+2026-05-26 07:45:06,276 INFO Chờ nhận các đoạn file...
+2026-05-26 07:45:10,248 ERROR [SECURITY] Lỗi toàn vẹn (Hash mismatch) tại đoạn 1!
+2026-07-07 02:09:09,138 INFO Hệ thống máy nhận đã sẵn sàng tại cổng 65432.
+2026-07-07 02:09:09,139 INFO Đang chờ dữ liệu từng bước từ Sender...
